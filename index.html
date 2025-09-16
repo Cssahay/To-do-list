@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-    <div class="container">
-         <div class="todo-app">
-            <h2>To-Do-List</h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-            <button onclick="addTask()">Add</button>
-            </div>
-            <ul id="list-container">
-                <!-- <li class="checked">task 1</li>
-                <li>task 2</li>
-                <li>task 3</li> -->
-            </ul>
-         </div>
-    </div>
-    <script src="script.js"></script>
-    </body> 
-</html> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="todo-app">
+      <h2>To-Do List</h2>
+
+      <form id="todo-form" class="row">
+        <input
+          type="text"
+          id="input-box"
+          placeholder="Add your task"
+          aria-label="Task input"
+        />
+        <button type="submit">Add</button>
+      </form>
+
+      <p id="counter"></p>
+      <ul id="list-container"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
